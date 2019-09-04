@@ -15,4 +15,5 @@ print ("the values of X are "+ str(x))
 #Plot Sine and CoSine
 plt.plot(x,numpy.sin(x))
 plt.plot(x,numpy.cos(x))
+plt.plot(x,numpy.tan(x)) # Added by Gordon Garisch
 plt.show()
