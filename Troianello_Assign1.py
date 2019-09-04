@@ -2,18 +2,22 @@
 # Author: Jessica Nocerino Troianello
 # Team Members: Brooke Crowe, Colin Stipcak, Gordon Garisch, Jessica Troianello
 
-#Import Libraries
+# Import Libraries
 import numpy
 import matplotlib.pyplot as plt
 
-#Generate 360 random numbers between 0 and Pi*2
-x = numpy.random.uniform(low=0, high=(numpy.pi*2), size=(360))
+# Generate 360 random numbers between 0 and Pi*2
+x = numpy.random.uniform(low=0, high=(numpy.pi * 2), size=(360))
 
-#Readout of Random Values Generated
-print ("the values of X are "+ str(x))
+# Readout of Random Values Generated
+print("the values of X are " + str(x))
+# Sort values of X
+x=sorted(x)
 
-#Plot Sine and CoSine
-plt.plot(x,numpy.sin(x))
-plt.plot(x,numpy.cos(x))
-plt.plot(x,numpy.tan(x)) # Added by Gordon Garisch
+# Plot Sine and CoSine
+plt.plot(x, numpy.sin(x))
+plt.plot(x, numpy.cos(x))
+plt.plot(x, numpy.tan(x))  # Added by Gordon Garisch
+plt.title ("Plot of Sine CoSine and Tangent")
+plt.legend(("Sine", "Cosine", "Tangent" ))
 plt.show()
